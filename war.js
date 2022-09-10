@@ -13,6 +13,7 @@ class Deck {
     get numberOfCards() {
         return this.card.length
     }
+
     shuffle() {
         for (let i = this.numberOfCards - 1; i > 0; i--) {
             const newIndex = Math.floor(Math.random() * (i + 1))
@@ -23,14 +24,12 @@ class Deck {
     }
 }
 
-
 class Card {
     constructor(suit, value) {
         this.suit = suit
         this.value = value
     }
 }
-
 
 function createDeck() {
     return suit.flatMap(suit => {
@@ -52,9 +51,14 @@ function startGame(){
 
     console.log(playerOneDeck);
     console.log(playerTwoDeck);
+
+
 }
 
+
 console.log(startGame());
+
+
 
 
  
